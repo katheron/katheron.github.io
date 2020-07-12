@@ -11,14 +11,14 @@
     <title>Bootstrap Visualization Dashboard</title>
   </head>
   <body>
-    <nav class="container" style="margin-top:30px">      
-      <ul class="nav nav-tabs">
+    <div class="container" style="margin-top:30px">      
+      <nav class="nav nav-tabs">
           <li class="nav-item">
-              <a href="./index.html" class="nav-link active">Life Expectancy in the Twin Cities
+              <a href="./index.html" class="nav-link">Life Expectancy in the Twin Cities
                 <span class="caret"></span></a>
           </li>
           <li class="dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./plots.html">Plots</a>
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="./plots.html">Plots</a>
               <ul class="dropdown-menu">
                 <li><a href="./popplots.html" class="dropdown-item">Population Density</a></li>
                 <li><a href="./incomeplots.html" class="dropdown-item">Median Income</a></li>
@@ -33,29 +33,11 @@
           </li>
         </nav> 
     </div>
+    </div>
     <div class= "container" style="margin-top:30px">
-      <h1>Life Expectancy in the Twin Cities</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <p>What factors impact Life Expectancy in the MN Twin Cities Metro counties? In this group project, we examined six separate factors and their relationship to life expectancy.
-            We found that Median Household Income has strong positive correlation (coefficient= 0.85) with life expectancy.
-            Unemployment has strong negative correlation (coefficient= -0.7) with life expectancy.
-            All other factors were insignificant with p-values greater than 0.05 and there is not a clear relationship with life expectancy.</p>
-        </div>
-        <div class="col-sm-4">
-          <h2>Visualizations</h2>
-          <img class="img-responsive" src="Resources/assets/images/Income_barchart.png" />
+        <h2 id="median">Life Expectancy vs. Median Income</h2>
+        <img class="img-responsive" src="Resources/assets/images/Income_barchart.png" alt="Income Barchart" />
           <img class="img-responsive" src="Resources/assets/images/LifeExpectancy_vs_Income.png" />
-          <img class="img-responsive" src="Resources/assets/images/pop_barchart.png" />
-          <img class="img-responsive" src="Resources/assets/images/LifeExpectancy_vs_Pop.png" />
-          <img class="img-responsive" src="Resources/assets/images/unemployment.png" />
-          <img class="img-responsive" src="Resources/assets/images/LifeExpectancy_vs_Unemployment.png" />
-        </div>
-      </div>
-    </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
